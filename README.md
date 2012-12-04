@@ -1,7 +1,7 @@
 unity-sublime-text-2-installer
 ==============================
 
-Ubuntu 11.10 > * installer for Sublime Text 2
+Ubuntu 11.10 > * installer for Sublime Text 2 (v2.0.1)
 
 # How to use ?
 
