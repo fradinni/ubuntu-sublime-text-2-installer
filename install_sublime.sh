@@ -92,6 +92,9 @@ if [ ${DEV} -eq 0 ]; then
 	mv ./sublime.desktop /usr/share/applications/sublime.desktop
 fi
 
+cd ..
+rm -Rf sublime_installer_tmp/
+
 echo 
 echo "Installation done."
 cd ..

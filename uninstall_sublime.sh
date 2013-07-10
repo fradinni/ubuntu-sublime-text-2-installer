@@ -8,6 +8,7 @@ echo Uninstalling Sublime Text 2...
 echo --------------------------------------
 
 echo "-> Kill process..."
+killall subl > /dev/null 2>&1
 killall sublime > /dev/null 2>&1
 
 echo "-> Remove desktop shortcut..."
