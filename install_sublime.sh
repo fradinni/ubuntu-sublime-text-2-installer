@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 echo
 echo ======================================
 echo == Sublime Text 2 - Ubuntu Installer =
@@ -100,6 +100,6 @@ echo "Installation done."
 cd ..
 echo "Press [Enter] to exit and launch Sublime Text 2..."
 read end
-subl &
 
+subl &
 exit 0
