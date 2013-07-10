@@ -64,7 +64,7 @@ if [ ${DEV} -eq 0 ]; then
 fi
 
 #Create .desktop file
-DESK_FILE=./sublime.desktop
+DESK_FILE=./subl.desktop
 touch ${DESK_FILE}
 echo "[Desktop Entry]" > ${DESK_FILE}
 echo "Version=1.0" >> ${DESK_FILE}
@@ -73,7 +73,7 @@ echo "# Only KDE 4 seems to use GenericName, so we reuse the KDE strings." >> ${
 echo "# From Ubuntu's language-pack-kde-XX-base packages, version 9.04-20090413." >> ${DESK_FILE}
 echo "GenericName=Sublime Text" >> ${DESK_FILE}
 echo "" >> ${DESK_FILE}
-echo "Exec=sublime %f %U" >> ${DESK_FILE}
+echo "Exec=subl %f %U" >> ${DESK_FILE}
 echo "Terminal=false" >> ${DESK_FILE}
 echo "" >> ${DESK_FILE}
 echo "Icon=/usr/lib/Sublime Text 2/Icon/48x48/sublime_text.png" >> ${DESK_FILE}
@@ -82,14 +82,14 @@ echo "Categories=TextEditor;IDE;Development" >> ${DESK_FILE}
 echo "X-Ayatana-Desktop-Shortcuts=NewWindow" >> ${DESK_FILE}
 echo "" >> ${DESK_FILE}
 echo "[NewWindow Shortcut Group]" >> ${DESK_FILE}
-echo "Name=New Editor" >> ${DESK_FILE}
-echo "Exec=sublime -n" >> ${DESK_FILE}
+echo "Name=New Window" >> ${DESK_FILE}
+echo "Exec=subl -n" >> ${DESK_FILE}
 echo "TargetEnvironment=Unity" >> ${DESK_FILE}
 echo "" >> ${DESK_FILE}
 
 #Move desktp file to /usr/share/applications
 if [ ${DEV} -eq 0 ]; then
-	mv ./sublime.desktop /usr/share/applications/sublime.desktop
+	mv ./subl.desktop /usr/share/applications/subl.desktop
 fi
 
 cd ..
