@@ -27,7 +27,7 @@ cd ./sublime_installer_tmp
 #Download linux archive file
 ARCH=`uname -m`
 echo -n "Architecture: "
-if [ ${ARCH} = "x86_64" ]; then
+if [ ${ARCH} == "x86_64" ]; then
 	echo "64bits."
 	if [ ${DEV} -eq 0 ]; then
 		if [ ! -f "./Sublime Text 2.0.2 x64.tar.bz2" ]; then
